@@ -30,12 +30,7 @@ const App = () => {
         });
       });
     }
-
-    console.log('I HAVE A TOKEN 👉', token);
   }, []);
-
-  console.log('👱', user);
-  console.log('🦉', token);
 
   return (
     <div className="app">

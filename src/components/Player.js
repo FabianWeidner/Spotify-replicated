@@ -1,7 +1,19 @@
-export const Player = () => {
+import Sidbar from './Sidebar';
+import Body from './Body';
+import classes from './Player.module.css';
+import Footer from './Footer';
+
+export const Player = ({ spotify }) => {
   return (
-    <div>
-      <h1>Welcome to spotify</h1>
+    <div className={classes.player}>
+      <div className={classes.player__body}>
+        <Sidbar />
+        <Body />
+      </div>
+
+      <Footer />
     </div>
   );
 };
+
+export default Player;
