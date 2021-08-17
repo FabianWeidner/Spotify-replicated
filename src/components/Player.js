@@ -8,7 +8,7 @@ export const Player = ({ spotify }) => {
     <div className={classes.player}>
       <div className={classes.player__body}>
         <Sidbar />
-        <Body />
+        <Body spotify={spotify} />
       </div>
 
       <Footer />
